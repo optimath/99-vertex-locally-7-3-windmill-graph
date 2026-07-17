@@ -4,7 +4,7 @@ This repository presents a Google OR-Tools CP-SAT construction of a
 **99-vertex locally (7,3)-windmill graph**.
 
 For every vertex, the graph induced by its open neighborhood is isomorphic to
-7K_2. Equivalently, the graph is 14-regular and every edge belongs to
+7K<sub>2</sub>. Equivalently, the graph is 14-regular and every edge belongs to
 exactly one triangle.
 
 The constructed graph is additionally tripartite.
