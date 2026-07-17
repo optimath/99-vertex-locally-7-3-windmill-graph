@@ -39,13 +39,11 @@ All these properties were checked directly from the stored graph.
 ## Construction model
 
 The triangles are represented as the hyperedges of a
-**3-uniform, 3-partite linear hypergraph**. The vertex set is partitioned into
+**3-uniform, 3-partite linear hypergraph**. The vertex set is partitioned into three parts:
 
-\[
-A=\{0,\ldots,32\},\qquad
-B=\{33,\ldots,65\},\qquad
-C=\{66,\ldots,98\}.
-\]
+- **A** = {0, ..., 32}
+- **B** = {33, ..., 65}
+- **C** = {66, ..., 98}
 
 Every selected hyperedge contains one vertex from each part. The model requires:
 
