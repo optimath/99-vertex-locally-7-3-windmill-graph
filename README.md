@@ -21,9 +21,9 @@ definition of a locally \(7,3\)-windmill graph.
 - diameter 3 and radius 3;
 - girth 3;
 - every edge belongs to exactly one triangle;
-- every open neighborhood is isomorphic to \(7K_2\);
+- every open neighborhood is isomorphic to 7K_2;
 - tripartite, with three parts of size 33;
-- contains an induced Paley graph \(P(9)\).
+- contains an induced Paley graph P(9).
 
 All these properties were checked directly from the stored graph.
 
