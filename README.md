@@ -14,9 +14,10 @@ The constructed graph is additionally tripartite.
 - 99 vertices;
 - 693 edges;
 - 231 triangles;
-- degree 14 at every vertex;
-- connected, with one connected component;
-- diameter 3 and radius 3;
+- 14-regular;
+- connected;
+- diameter 3;
+- radius 3;
 - girth 3;
 - every edge belongs to exactly one triangle;
 - every open neighborhood is isomorphic to 7K_2;
