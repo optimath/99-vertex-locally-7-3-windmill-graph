@@ -46,13 +46,12 @@ The triangles are represented as the hyperedges of a
 
 Every selected hyperedge contains one vertex from each part. The model requires:
 
-1. every vertex to belong to exactly seven selected hyperedges;
-2. every pair of vertices to occur in at most one selected hyperedge;
-3. every selected hyperedge to define a graph triangle;
-4. no additional graph triangles to occur.
+1. Every vertex to belong to exactly seven selected hyperedges;
+2. Every pair of vertices to occur in at most one selected hyperedge;
+3. Every hyperedge to define a graph triangle;
+4. No additional graph triangles to occur.
 
-The second condition is hypergraph linearity. It ensures that no graph edge is
-used by two selected triangles.
+The second condition is hypergraph linearity.
 
 ## Stored graph
 
