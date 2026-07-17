@@ -15,14 +15,14 @@ The constructed graph is additionally tripartite.
 - 693 edges;
 - 231 triangles;
 - 14-regular;
-- connected;
-- diameter 3;
-- radius 3;
-- girth 3;
-- every edge belongs to exactly one triangle;
-- every open neighborhood is isomorphic to 7K<sub>2</sub>;
-- tripartite, with three parts of size 33;
-- contains an induced Paley graph P(9).
+- Connected;
+- Diameter 3;
+- Radius 3;
+- Girth 3;
+- Every edge belongs to exactly one triangle;
+- Every open neighborhood is isomorphic to 7K<sub>2</sub>;
+- Tripartite, with three parts of size 33;
+- Contains an induced Paley graph P(9).
 
 All these properties were checked directly from the stored graph.
 
