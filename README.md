@@ -1,0 +1,108 @@
+# A 99-Vertex Locally (7, 3)-Windmill Graph
+
+This repository presents a Google OR-Tools CP-SAT construction of a
+**99-vertex locally (7,3)-windmill graph**.
+
+For every vertex, the graph induced by its open neighborhood is isomorphic to
+\(7K_2\). Equivalently, the graph is 14-regular and every edge belongs to
+exactly one triangle.
+
+The constructed graph is additionally tripartite. Tripartiteness is a property
+of this particular construction and computational model; it is not part of the
+definition of a locally \((7,3)\)-windmill graph.
+
+## Verified graph properties
+
+- 99 vertices;
+- 693 edges;
+- 231 triangles;
+- degree 14 at every vertex;
+- connected, with one connected component;
+- diameter 3 and radius 3;
+- girth 3;
+- every edge belongs to exactly one triangle;
+- every open neighborhood is isomorphic to \(7K_2\);
+- tripartite, with three parts of size 33;
+- contains an induced Paley graph \(P(9)\).
+
+All these properties were checked directly from the stored graph.
+
+## Repository contents
+
+- `construct_locally_7_3_windmill_graph.py` — OR-Tools CP-SAT construction;
+- `verify_graph.py` — independent verification of the stored graph;
+- `results/adjacency_lists.txt` — primary representation of the graph;
+- `results/graph_triangles.json` — the complete list of its 231 triangles;
+- `results/graph.graphml` — GraphML file for yEd, Gephi, NetworkX, and similar software;
+- `results/graph_properties.txt` — verified numerical and structural properties.
+
+## Construction model
+
+The triangles are represented as the hyperedges of a
+**3-uniform, 3-partite linear hypergraph**. The vertex set is partitioned into
+
+\[
+A=\{0,\ldots,32\},\qquad
+B=\{33,\ldots,65\},\qquad
+C=\{66,\ldots,98\}.
+\]
+
+Every selected hyperedge contains one vertex from each part. The model requires:
+
+1. every vertex to belong to exactly seven selected hyperedges;
+2. every pair of vertices to occur in at most one selected hyperedge;
+3. every selected hyperedge to define a graph triangle;
+4. no additional graph triangles to occur.
+
+The second condition is hypergraph linearity. It ensures that no graph edge is
+used by two selected triangles.
+
+## Stored graph
+
+The primary representation is `results/adjacency_lists.txt`. For example,
+
+```text
+0: 42 44 48 51 53 59 65 66 71 78 81 88 89 91
+```
+
+lists the 14 neighbors of vertex 0.
+
+The file `results/graph_triangles.json` stores the same graph as 231 triples.
+Each triple `[i, j, k]` represents a triangle on vertices `i`, `j`, and `k`.
+The triangle list determines all 693 edges because every edge belongs to exactly
+one triangle.
+
+## Paley graph of order 9
+
+The vertices
+
+```text
+{7, 8, 9, 34, 35, 53, 69, 71, 86}
+```
+
+induce a subgraph isomorphic to the Paley graph of order 9, equivalently the
+\(3	imes3\) rook graph. It is strongly regular with parameters
+\(\operatorname{srg}(9,4,1,2)\).
+
+## Running the construction
+
+```bash
+pip install -r requirements.txt
+python construct_locally_7_3_windmill_graph.py
+```
+
+The original Google Colab run found a feasible solution in approximately
+40 minutes. Runtime depends on hardware, OR-Tools version, solver settings, and
+randomization.
+
+## Verifying the stored graph
+
+```bash
+python verify_graph.py
+```
+
+The verification script uses only the Python standard library.
+
+## License
+
+The source code and stored construction are released under the MIT License.

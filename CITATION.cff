@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software or graph construction, please cite this repository."
+title: "A 99-Vertex Locally (7, 3)-Windmill Graph"
+type: software
+authors:
+  - family-names: "Guseinov"
+    given-names: "Elmar"
+year: 2026
+license: MIT
