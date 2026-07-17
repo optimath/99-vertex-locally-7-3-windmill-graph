@@ -7,9 +7,7 @@ For every vertex, the graph induced by its open neighborhood is isomorphic to
 7K_2. Equivalently, the graph is 14-regular and every edge belongs to
 exactly one triangle.
 
-The constructed graph is additionally tripartite. Tripartiteness is a property
-of this particular construction and computational model; it is not part of the
-definition of a locally \(7,3\)-windmill graph.
+The constructed graph is additionally tripartite.
 
 ## Verified graph properties
 
