@@ -20,7 +20,7 @@ The constructed graph is additionally tripartite.
 - radius 3;
 - girth 3;
 - every edge belongs to exactly one triangle;
-- every open neighborhood is isomorphic to 7K_2;
+- every open neighborhood is isomorphic to 7K<sub>2</sub>;
 - tripartite, with three parts of size 33;
 - contains an induced Paley graph P(9).
 
