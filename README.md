@@ -77,8 +77,8 @@ The vertices
 ```
 
 induce a subgraph isomorphic to the Paley graph of order 9, equivalently the
-\(3	imes3\) rook graph. It is strongly regular with parameters
-\(\operatorname{srg}(9,4,1,2)\).
+3×3 rook graph. It is strongly regular with parameters
+srg(9,4,1,2).
 
 ## Running the construction
 
