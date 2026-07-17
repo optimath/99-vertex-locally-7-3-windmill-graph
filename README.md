@@ -3,6 +3,8 @@
 This repository presents a Google OR-Tools CP-SAT construction of a
 **99-vertex locally (7,3)-windmill graph**.
 
+This construction was obtained during computational investigations of Conway's 99-graph problem. Conway's 99-graph is a hypothetical 99-vertex locally (7,3)-windmill graph in which every pair of distinct non-adjacent vertices has exactly two common neighbors.
+
 ![Tripartite layout of the constructed graph](results/graph_tripartite_layout.png)
 *Tripartite layout of the constructed 99-vertex locally (7,3)-windmill graph.*
 
